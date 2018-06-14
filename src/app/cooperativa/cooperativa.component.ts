@@ -170,10 +170,6 @@ export class CooperativaComponent implements OnInit {
         this.updateAddress();
     }
 
-    toggleMap() { 
-        this.showMap = !this.showMap;
-    }
-
     save() {
         var valid: any = this.cooperativa.valid();
         if (valid !== true) {
@@ -391,6 +387,10 @@ export class CooperativaComponent implements OnInit {
     goHome() {
         this.router.navigateByUrl('/');
     }
+
+    toggleMap() { 
+        this.showMap = !this.showMap;
+    }  
 
     guid() {
         const s4=()=> Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
