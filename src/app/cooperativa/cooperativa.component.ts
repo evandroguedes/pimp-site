@@ -70,13 +70,6 @@ export class CooperativaComponent implements OnInit {
     ngOnInit() {
         this.cooperativa = new Cooperativa();
         this.setCurrentPosition();        
-        $(":file")['filestyle']({
-            input: true,
-            buttonText: 'Selecionar Imagem',
-            //buttonName: 'btn btn-primary',
-            icon: false
-        });
-
         (<any>$("#datepicker")).datepicker({
             changeMonth: true,
             changeYear: true,
