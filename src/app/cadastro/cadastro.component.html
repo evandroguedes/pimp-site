@@ -582,26 +582,20 @@
                         <div>
                             <div style="width: 28%; float: left; margin-right: 2%;">
                                 <div class="form-group">
-                                    <input type="text" 
-                                            class="form-control" 
+                                    <select class="form-control" 
+                                            id="state"
                                             name="state"
-                                            placeholder="Estado" 
-                                            [(ngModel)]="catador.state"
-                                            (focusout)="addressFocusOut()"
-                                            maxlength="128">
+                                            [(ngModel)]="catador.state">
+                                    </select>
                                 </div> 
                             </div>    
                             <div style="width: 28%; float: left; margin-right: 2%;">
                                 <div class="form-group">
-                                    <input type="text" 
-                                            class="form-control" 
-                                            placeholder="Cidade" 
+                                    <select class="form-control" 
                                             id="city" 
                                             name="city"
-                                            [(ngModel)]="catador.city"
-                                            required
-                                            (focusout)="addressFocusOut()"
-                                            maxlength="64">
+                                            [(ngModel)]="catador.city">
+                                    </select>
                                 </div>
                             </div>
                             <div style="width: 40%; float: left">
@@ -617,33 +611,8 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- --------4th row of the colm--------- -->                            
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <select class="form-control" 
-                                            id="state"
-                                            name="state"
-                                            [(ngModel)]="catador.state">
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- --------5th row of the colm--------- -->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <select class="form-control" 
-                                            id="city" 
-                                            name="city"
-                                            [(ngModel)]="catador.city">
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- --------6th row of the colm--------- -->                        
-                        <div class="row">
+                        <!-- --------2th row of the colm--------- -->                        
+                        <div>
                             <div class="input-col-left">
                                 <div class="form-group">
                                     <input type="text" 
@@ -668,21 +637,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- --------6th row of the colm---------
-                        <div class="row">
-                            <div>
-                                <div class="form-group">
-                                    <input type="text" 
-                                            class="form-control" 
-                                            placeholder="Outros bairros que coleta" 
-                                            name="region"
-                                            maxlength="128"
-                                            [(ngModel)]="catador.region"/>
-                                </div>
-                            </div>
-                        </div> -->
-
-
                         <!-- -----------End of 1stcol------- -->
                     </div>
                     <!-- --------------End of row-------------- -->
