@@ -26,6 +26,7 @@ export class CooperativaComponent implements OnInit {
         
     public loading: Boolean = false;
     public isEditing: boolean = false;
+    public showMap: boolean = false;
 
     public cooperativa: Cooperativa;
     public user: User;
@@ -174,6 +175,10 @@ export class CooperativaComponent implements OnInit {
         this.markLat = event['coords'].lat;
         this.markLng = event['coords'].lng;
         this.updateAddress();
+    }
+
+    toggleMap() { 
+        this.showMap = !this.showMap;
     }
 
     save() {
